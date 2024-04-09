@@ -10,3 +10,7 @@ axum = "0.7.5"
 hyper = { version = "1.2.0", features = ["server", "http1"] }
 tokio = { version = "1.37.0", features = ["rt", "io-util", "macros", "sync", "net", "rt-multi-thread"] }
 kvarn-fastcgi-client = "0.9.0"
+log = { version = "0.4.21", features = ["kv_std"] }
+env_logger = "0.11.3"
+chrono = "0.4.37"
+json_env_logger = { version = "0.1.1", features = ["iso-timestamps", "chrono"] }
