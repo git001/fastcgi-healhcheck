@@ -101,8 +101,8 @@ async fn main() {
             writeln!(
                 buf,
                 "{} {} {:?}::{:?} : {}",
+                Utc::now().format("%Y-%m-%dT%H:%M:%SZ"),
                 record.level(),
-                Utc::now().format("%Y-%m-%d %H:%M:%S %Z"),
                 record.file(),
                 record.line(),
                 record.args()
