@@ -26,5 +26,6 @@ json_env_logger = { version = "0.1.1", features = ["iso-timestamps", "chrono"] }
 
 [[bin]]
 name = "fastcgi-healthcheck"
+path = "src/main.rs"
 test = true
 bench = true
