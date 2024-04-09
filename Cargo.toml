@@ -1,6 +1,15 @@
 [package]
-name = "fastcgi-healhcheck"
-version = "0.1.0"
+name = "fastcgi-healthcheck"
+description = "Fastcgi healthcheck, power by kvarn-fastcgi-client, axum and tokio."
+version = "0.2.0"
+authors = ["Aleksandar Lazic <al-rust@none.at>"]
+readme = "README.md"
+homepage = "https://github.com/git001/fastcgi-healthcheck"
+repository = "https://github.com/git001/fastcgi-healthcheck"
+license = "GPL-3.0"
+keywords = ["healthcheck","fastcgi","fcgi","http"]
+categories = ["network-programming", "web-programming::http-server"]
+exclude = ["target/*","Dockerfile",".github/*","src/main.rs",".gitignore"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -14,3 +23,8 @@ log = { version = "0.4.21", features = ["kv_std"] }
 env_logger = "0.11.3"
 chrono = "0.4.37"
 json_env_logger = { version = "0.1.1", features = ["iso-timestamps", "chrono"] }
+
+[[bin]]
+name = "fastcgi-healthcheck"
+test = true
+bench = true

@@ -268,8 +268,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "fastcgi-healhcheck"
-version = "0.1.0"
+name = "fastcgi-healthcheck"
+version = "0.2.0"
 dependencies = [
  "axum",
  "chrono",
