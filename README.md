@@ -4,7 +4,7 @@ Due to the fact that in the container world is a health check quite essential an
 
 At the current time is the HTTP Protocol widely supported for health checks but not the fastcgi protocol.
 
-The `fastcgi-healhcheck` tool exists for only one purpose, it calls a fcgi server with a specific URL and expect a specific answer.
+The `fastcgi-healthcheck` tool exists for only one purpose, it calls a fcgi server with a specific URL and expect a specific answer.
 Based on that answer will the tool return a 200 or a 404 HTTP code to the requester.
 
 # Environment Variables
@@ -25,5 +25,5 @@ This tool have it's own health endpoints `/health` and `/healthz`.
 
 # Disclaimer
 
-This is one of my firt rust programm I'm pretty sure that this tool could be simplified :smiley:  
+This is one of my first rust programm I'm pretty sure that this tool could be simplified :smiley:  
 I'm open for suggestions.
